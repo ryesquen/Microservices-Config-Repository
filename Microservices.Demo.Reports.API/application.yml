@@ -1,0 +1,4 @@
+ConnectionStrings: 
+    ReportsConnection: conexion_reportes
+ServicesUrl:
+    ReportsApiUrl: http://Microservices.Demo.Reports.API/api/reports  

@@ -2,4 +2,4 @@ ConnectionStrings:
     ReportsConnection: conexion_reportes
 ServicesUrl:
     ProductApiUrl: http://Microservices.Demo.Product.API/api/products
-    PolicyApiUrl: http://Microservices.Demo.Pricing.API/api/pricing    
+    PolicyApiUrl: http://Microservices.Demo.Policy.API/api/policies 

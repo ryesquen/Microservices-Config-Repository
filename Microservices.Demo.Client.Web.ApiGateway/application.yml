@@ -109,6 +109,20 @@ Routes:
             userType: SALESMAN
         DangerousAcceptAnyServerCertificateValidator: true
     -
+        DownstreamPathTemplate: /api/Policies
+        DownstreamScheme: http
+        UpstreamPathTemplate: /api/Policies
+        ServiceName: Microservices.Demo.Policy.API
+        UpstreamHttpMethod: 
+            - Get
+        AuthenticationOptions:
+            AuthenticationProviderKey: ApiSecurityAuthenticationScheme
+#            AllowedScopes:
+#                -
+        RouteClaimsRequirement:
+            userType: SALESMAN
+        DangerousAcceptAnyServerCertificateValidator: true
+    -
         DownstreamPathTemplate: /api/Policies/{number}
         DownstreamScheme: http
         UpstreamPathTemplate: /api/Policies/{number}
